@@ -1,0 +1,92 @@
+.root {
+    -fx-font-family: "Georgia";
+    -fx-background-size: cover;
+}
+
+.legno {
+    -fx-background-image: url("../img/wood.jpg");
+}
+
+/* TITOLI */
+.label-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f5deb3;
+    -fx-effect: dropshadow(gaussian, black, 5,0,2,2);
+}
+
+/* BOTTONI */
+.button {
+    -fx-background-color:
+            linear-gradient(#6b4423, #3e2723);
+
+    -fx-text-fill: #f5deb3;
+
+    -fx-font-size: 14px;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #c8a165;
+    -fx-border-radius: 12;
+
+    -fx-padding: 10 18;
+
+    -fx-effect:
+            dropshadow(gaussian, rgba(0,0,0,0.5), 5,0,2,2);
+}
+
+.button:hover {
+    -fx-background-color:
+            linear-gradient(#8d5a2b, #4e342e);
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* LISTVIEW */
+.list-view {
+    -fx-background-color: rgba(255,255,240,0.85);
+
+    -fx-border-color: #5d4037;
+    -fx-border-radius: 10;
+
+    -fx-background-radius: 10;
+}
+
+/* POSTA */
+.posta-box {
+
+    -fx-background-image: url("../img/paper.jpg");
+
+    -fx-background-image-radius: 15;
+
+    -fx-background-size: cover;
+
+    -fx-border-color: #5d4037;
+
+    -fx-border-width: 3;
+
+    -fx-border-radius: 15;
+
+    -fx-background-radius: 15;
+
+    -fx-padding: 15;
+}
+
+/* LIBRI */
+.libro {
+
+    -fx-effect:
+            dropshadow(gaussian, rgba(0,0,0,0.7), 12,0,3,3);
+
+    -fx-cursor: hand;
+}
+
+.scaffale-riga {
+    -fx-background-color: #5d4037;
+
+    -fx-padding: 15;
+
+    -fx-background-radius:8;
+}
+

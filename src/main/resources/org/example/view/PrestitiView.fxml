@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.PrestitiController"
+      stylesheets="@../../../css/style.css">
+
+    <Label text="Gestione Prestiti" styleClass="label-title"/>
+
+    <!-- CLIENTI -->
+    <Label text="Clienti Tesserati"/>
+    <ListView fx:id="listaClienti" prefHeight="120" prefWidth="250"/>
+
+    <Button text="Crea Prestito" onAction="#creaPrestito"/>
+
+    <!-- LIBRI -->
+    <Label text="Libri Disponibili"/>
+    <ListView fx:id="listaLibri" prefHeight="120" prefWidth="250"/>
+
+    <!-- PRESTITI -->
+    <Label text="Prestiti in Corso"/>
+    <ListView fx:id="listaPrestiti" prefHeight="120" prefWidth="250"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Conferma Prestito" onAction="#confermaPrestito"/>
+        <Button text="Termina Prestito" onAction="#terminaPrestito"/>
+    </HBox>
+
+    <Button text="Indietro" onAction="#goBack"/>
+
+</VBox>

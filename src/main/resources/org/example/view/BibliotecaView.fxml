@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="legno" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.BibliotecaController">
+
+    <!-- TOP -->
+    <top>
+        <VBox alignment="CENTER" spacing="15">
+
+            <Label styleClass="label-title" text="Biblioteca" />
+
+        </VBox>
+    </top>
+
+    <!-- CENTRO -->
+    <center>
+
+        <StackPane alignment="CENTER">
+
+            <!-- sfondo scaffale -->
+
+            <VBox alignment="CENTER" spacing="20">
+
+                <Label fx:id="categoriaLabel" styleClass="label-title" />
+
+                <GridPane fx:id="scaffaleGrid" alignment="CENTER" hgap="20" vgap="20" />
+
+            </VBox>
+
+        </StackPane>
+
+    </center>
+
+    <!-- POSTA -->
+    <right>
+
+        <VBox alignment="TOP_CENTER" prefWidth="260" spacing="15">
+
+            <Label styleClass="label-title" text="Posta" />
+
+            <HBox fx:id="postaBox" alignment="CENTER" spacing="10" styleClass="posta-box" />
+
+        </VBox>
+
+    </right>
+
+    <!-- BOTTOM -->
+    <bottom>
+
+        <VBox alignment="CENTER" spacing="15">
+
+            <HBox alignment="CENTER" spacing="20">
+
+                <Button onAction="#prevScaffale" text="⬅" />
+
+                <Button onAction="#nextScaffale" text="➡" />
+
+            </HBox>
+
+            <Button onAction="#goBack" text="Torna al Menu" />
+
+        </VBox>
+
+    </bottom>
+
+</BorderPane>
