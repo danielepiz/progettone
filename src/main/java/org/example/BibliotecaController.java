@@ -315,7 +315,7 @@ public class BibliotecaController {
 
                         generaPosta();
 
-                        countdown = 8;
+                        countdown = 2;
                     }
                 })
         );
