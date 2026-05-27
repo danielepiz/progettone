@@ -7,7 +7,7 @@ public class Biblioteca {
 
     public List<Scaffale> scaffali = new ArrayList<>();
     public List<Cliente> clienti = new ArrayList<>();
-    public List<Prestito> prestiti = new ArrayList<>();
+    public List<Prestito > prestiti = new ArrayList<>();
     public List<Libro> posta = new ArrayList<>();
 
     public void inizializzaClienti() {

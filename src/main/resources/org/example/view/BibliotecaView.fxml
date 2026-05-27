@@ -33,6 +33,9 @@
 
     </center>
 
+
+    <Label fx:id="timerLabel" text="Nuovo libro tra: 2s"/>
+
     <!-- POSTA -->
     <right>
 

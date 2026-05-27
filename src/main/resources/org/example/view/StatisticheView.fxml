@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.StatisticheController"
+      alignment="CENTER"
+      spacing="20"
+      styleClass="background">
+
+    <Label text="STATISTICHE BIBLIOTECA"
+           styleClass="titolo"/>
+
+    <Label fx:id="libriLabel"/>
+    <Label fx:id="clientiLabel"/>
+    <Label fx:id="prestitiLabel"/>
+    <Label fx:id="postaLabel"/>
+    <Label fx:id="scaffaleLabel"/>
+
+    <Button text="Indietro"
+            onAction="#goBack"/>
+
+</VBox>

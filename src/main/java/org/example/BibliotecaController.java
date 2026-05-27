@@ -8,6 +8,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
@@ -30,6 +31,11 @@ public class BibliotecaController {
 
     @FXML
     private HBox postaBox;
+
+    @FXML
+    private Label timerLabel;
+
+    private int countdown = 0;
 
     private int index = 0;
 
@@ -291,20 +297,34 @@ public class BibliotecaController {
 
     //timer per la posta
 
+
     private void startPostaTimer() {
 
         Timeline timeline = new Timeline(
 
-                new KeyFrame(
-                        Duration.seconds(2),
-                        e -> generaPosta()
-                )
+                new KeyFrame(Duration.seconds(1), e -> {
+
+                    countdown--;
+
+                    timerLabel.setText(
+                            "Nuovo libro tra: "
+                                    + countdown + "s"
+                    );
+
+                    if(countdown <= 0){
+
+                        generaPosta();
+
+                        countdown = 8;
+                    }
+                })
         );
 
         timeline.setCycleCount(Animation.INDEFINITE);
 
         timeline.play();
     }
+
 
     //popup del libro
 
